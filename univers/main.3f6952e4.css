@@ -994,8 +994,7 @@ pre code {
 }
 
 .row {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -25px;
     padding-bottom: 25px;
     margin-top: 50px
 }
@@ -4557,7 +4556,8 @@ tbody.collapse.in {
 
     .navbar-right {
         float: right !important;
-        margin-right: -15px
+        margin-right: -15px;
+        margin-left: -15px;
     }
 
     .navbar-right~.navbar-right {
@@ -5810,7 +5810,14 @@ body.minimal {
     height: 380px; /* Adjust this value as needed */
     width: auto; /* This will maintain the aspect ratio of the image */
     display: block;
-    margin: auto;
+    margin-bottom: 230px;
+}
+
+.team-image {
+    height: 380px; /* Adjust this value as needed */
+    width: auto; /* This will maintain the aspect ratio of the image */
+    display: block;
+    border-radius: 15px;
 }
 
 .hero-image:last-child {
@@ -5834,7 +5841,14 @@ body.minimal {
     
     .hero-image:last-child {
         margin-bottom: 0; /* Remove the bottom margin from the last image */
-    }    
+    }
+
+    .team-image {
+        height: 220px; /* Adjust this value as needed */
+        width: auto; /* This will maintain the aspect ratio of the image */
+        display: block;
+        border-radius: 15px;
+    }
 }
 
 .additional_description {
@@ -6275,6 +6289,24 @@ textarea {
     .navbar-default .navbar-collapse {
         background-color: #fc0
     }
+
+    .row {
+        padding-bottom: 25px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .h2,
+    h2 {
+        font-size: 20px
+    }
+
+    .other-image {
+        height: 275px; /* Adjust this value as needed */
+        width: auto; /* This will maintain the aspect ratio of the image */
+        display: block;
+        margin-bottom: 105px;
+    }    
 }
 
 .nav>li>a {
