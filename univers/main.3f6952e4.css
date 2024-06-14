@@ -5806,6 +5806,13 @@ body.minimal {
     margin-top: 110px;
 }
 
+.other-image {
+    height: 380px; /* Adjust this value as needed */
+    width: auto; /* This will maintain the aspect ratio of the image */
+    display: block;
+    margin: auto;
+}
+
 .hero-image:last-child {
     margin-right: 0;
 }
