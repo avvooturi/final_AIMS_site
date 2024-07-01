@@ -5756,21 +5756,38 @@ body.minimal {
 .section-container {
     padding: 60px 0;
     background-color: black;
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Set a maximum width */
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .section-container {
-        padding: 80px 0
+        padding: 80px 0;
     }
 }
 
-.section-container.only-container {
-    min-height: 84vh
+@media (max-width: 1200px) {
+    .section-container {
+        width: 90%; /* Adjust the width for smaller screens */
+        padding: 60px 0;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+    .section-container {
+        width: 100%; /* Full width on very small screens */
+        padding: 30px 0;
+    }
+}
+
+
+.section-container.only-container {
+    min-height: 84vh;
+}
+
+@media (max-width: 768px) {
     .section-container:first-of-type {
-        padding-top: 30px
+        padding-top: 30px;
     }
 }
 
@@ -5800,7 +5817,7 @@ body.minimal {
 }
 
 .hero-image {
-    height: 400px; /* Adjust this value as needed */
+    height: 40%; /* Adjust this value as needed */
     width: auto; /* This will maintain the aspect ratio of the image */
     margin-right: 10px;
     margin-top: 110px;
@@ -5811,7 +5828,7 @@ body.minimal {
 }
 
 .other_image, .micro_other_image {
-    height: 200px;
+    height: 175px;
     margin-bottom: 0; /* Remove bottom margin */
     margin-top: 0; /* Remove top margin */
 }
