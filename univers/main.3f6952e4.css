@@ -5796,7 +5796,7 @@ body.minimal {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 .hero-image {
@@ -5810,13 +5810,26 @@ body.minimal {
     margin-right: 0;
 }
 
-@media (max-width:768px) {
+.other_image, .micro_other_image {
+    height: 200px;
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-top: 0; /* Remove top margin */
+}
+
+.team-image {
+    height: 400px;
+    margin-left: 25px;
+    margin-right: -25px;
+}
+
+@media (max-width: 768px) {
     .image-container {
         display: flex;
-        flex-direction: column; /* Stack the images vertically */
+        flex-direction: row; /* Stack the images vertically */
         justify-content: center; /* Vertically center the images */
         align-items: center; /* Horizontally center the images */
-        height: 100vh; /* Make the container take up the full viewport height */
+        height: auto; /* Make the container take up the full viewport height */
+        flex-wrap: wrap;
     }
     
     .hero-image {
@@ -5827,8 +5840,17 @@ body.minimal {
     
     .hero-image:last-child {
         margin-bottom: 0; /* Remove the bottom margin from the last image */
-    }    
+    }
+    
+    .other_image, .micro_other_image {
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-top: 0; /* Remove top margin */
+        flex: 1 1 auto;
+        max-width: 135px;
+        height: 135px;
+    }
 }
+
 
 .additional_description {
     color: white;
@@ -5853,7 +5875,6 @@ body.minimal {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 22.5vh;
     }
     
     .hero-image {
